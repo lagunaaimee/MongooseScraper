@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NPR News Scrape</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" /> 
+    
+</head>
+
+<div id="header">
+<h1>{{articleNotes.title}}</h1>
+    <button><a href="/" id="scrape">Home</a></button>
+    <button><a href="/saved" id="savedNotesPage">See Saved Articles</a></button>
+</div>
+
+<!-- Pass in data from server.js -->
+<div class="text_middle">
+    <ul>
+        <li>
+        <p><span class="label">Summary:</span> {{articleNotes.summary}}</p>
+        <p><a href="{{articleNotes.link}}" target="_blank">Read Full Article</a></p>
+        <p><span class="label">Note Title:</span> {{articleNotes.note.title}}</p>
+        <p><span class="label">Note Body:</span> {{articleNotes.note.body}}</p>
+        </li>
+        <button id='deleteNoteHTML' data-id='{{this._id}}' data-title='{{this.title}}' data-summary='{{this.body}}'
+          data-link='{{this.link}}'>Delete from Saved</button>
+    </ul>
+</div>
