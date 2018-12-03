@@ -14,7 +14,7 @@ h4 {
 #header {
     text-align: center;
     padding: 1em;
-    background: #e07233;
+    background: palevioletred;
     color: #fff;
 }
 
@@ -42,7 +42,6 @@ button {
 }
 
 #news_background {
-    background: url("/images/newsprint.jpg") left top no-repeat;
     padding: 19em;
     position: fixed;
     z-index: -1;
