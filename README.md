@@ -1,2 +1,10 @@
 # MongooseScraper
-Homework 18
+
+NPR News Scraper
+
+Technologies Used:
+
+Mongoose
+Express
+Express-Handlebars
+Cheerio

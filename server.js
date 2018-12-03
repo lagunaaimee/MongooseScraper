@@ -15,6 +15,7 @@ app.set("view engine", "handlebars");
 var axios = require("axios");
 var cheerio = require("cheerio");
 
+// Require all models
 var db = require("./models");
 
 //var PORT = 3000;
@@ -33,8 +34,6 @@ app.use(express.urlencoded({
 app.use(express.json());
 // Make public a static folder
 app.use(express.static("public"));
-
-// Require all models
 
 // Connect to the Mongo DB
 // mongoose.connect("mongodb://localhost/nprScraper", {
